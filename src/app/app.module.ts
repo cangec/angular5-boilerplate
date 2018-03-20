@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -15,6 +16,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
     BsDropdownModule.forRoot()
   ],
   providers: [],

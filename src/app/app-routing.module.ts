@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: './login/login.module#LoginModule'
   },
   {
+    path: 'dashboard',
+    loadChildren: './dashboard/dashboard.module#DashboardModule'
+  },
+  {
     // should be at the bottom or routes
     path: '**',
     redirectTo: '/login'
