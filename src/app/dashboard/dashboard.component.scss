@@ -1,0 +1,13 @@
+.my-sidebar-container{
+  min-height: 100vh;
+
+  @media screen and (max-width:768px){
+    min-height: inherit;
+  }
+}
+
+.main-container{
+  @media screen and (max-width:768px){
+    padding: 15px !important;
+  }
+}

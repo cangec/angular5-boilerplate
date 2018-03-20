@@ -117,7 +117,6 @@ export class BoardComponent implements OnInit {
 
 }
 
-
 export interface IListArticle {
   id?: number;
   image?: {

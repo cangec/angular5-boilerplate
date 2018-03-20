@@ -3,8 +3,8 @@
 .login-wrapper{
   min-height: 100vh;
   width: 100%;
-  background: $bgGrey;
   position: relative;
+
 
   .login-container{
     position: absolute;
@@ -29,4 +29,19 @@
 
   }
 
+}
+
+.login-wrapper::before{
+  opacity: 0.1;
+  background: url("assets/img/brown-forman.jpg");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

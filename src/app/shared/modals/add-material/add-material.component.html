@@ -1,0 +1,33 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+  <button (click)="close()" type="button" class="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="desc">Select type</label>
+      <select class="form-control">
+        <option>PDF</option>
+        <option>PTT</option>
+        <option>Link</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="desc">Description</label>
+      <textarea class="form-control" id="desc" rows="3"></textarea>
+    </div>
+    <label style="display: block;" for="url">Add URL address</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="url" placeholder="Type URL address" aria-label="Add URL address" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">Open</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary">Save</button>
+</div>
+
