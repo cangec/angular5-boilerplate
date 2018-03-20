@@ -1,0 +1,27 @@
+.toolbar{
+  overflow: auto;
+  margin-bottom: 30px;
+  .main-title{
+    display: inline-block;
+  }
+}
+
+.date{
+  position: relative;
+}
+
+.desc-container{
+  position: relative;
+
+  .desc{
+    position: absolute;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .spacer {
+    height: 0;
+    overflow: hidden;
+  }
+}
