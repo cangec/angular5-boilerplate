@@ -5,6 +5,7 @@ import { DashboardRoutingModule } from './dashboard.routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { BoardComponent } from './board/board.component';
 import { ArticleComponent } from './article/article.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -14,7 +15,10 @@ import { ArticleComponent } from './article/article.component';
     DashboardRoutingModule,
     SharedModule
   ],
-  declarations: [DashboardComponent, BoardComponent, ArticleComponent]
+  declarations: [DashboardComponent,
+                 BoardComponent,
+                 AboutUsComponent,
+                 ArticleComponent]
 })
 export class DashboardModule {
 }

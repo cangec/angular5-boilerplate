@@ -1,0 +1,75 @@
+<div class="toolbar">
+  <button (click)="save()" class="btn btn-primary">Save</button>
+  <button (click)="publish()" class="btn btn-success">Publish</button>
+</div>
+<div class="article-container">
+  <h1>About us</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Text</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="links-and-download-meterial">
+          <label style="display: block">Links & Download material</label>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <select class="float-left mr-3">
+                <option>PDF</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <div class="actions float-right">
+                <div class="btn btn-sm btn-primary">
+                  <span class="fa fa-edit"></span>
+                </div>
+                <div style="min-width: 32px;" class="btn btn-sm btn-danger">
+                  <span class="fa fa-trash"></span>
+                </div>
+              </div>
+              <div class="descritpion">
+                Download our 2017 Report - German
+              </div>
+            </li>
+            <li class="list-group-item">
+              <select class="float-left mr-3">
+                <option>PDF</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <div class="actions float-right">
+                <div class="btn btn-sm btn-primary">
+                  <span class="fa fa-edit"></span>
+                </div>
+                <div style="min-width: 32px;" class="btn btn-sm btn-danger">
+                  <span class="fa fa-trash"></span>
+                </div>
+              </div>
+              <div class="descritpion">
+                Download our 2017 Report - German
+              </div>
+            </li>
+          </ul>
+          <button (click)="addNewMaterial()" style="margin-top: 10px;" class="btn btn-primary">Add New</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <label>Display picture</label>
+      <div class="upload-container">
+        <span *ngIf="!showImage" class="upload-icon fa fa-upload fa-fw"></span>
+        <img style="width: 100%" *ngIf="showImage" src="../../../assets/img/sample.jpg">
+        <button  *ngIf="showImage" class="remove-icon btn btn-danger btn-sm">
+          <span class="fa fa-remove fa-fw"></span>
+        </button>
+      </div>
+      <div class="text-right" style="margin-top: 10px;">
+        <div class="btn btn-md btn-primary" (click)="showImage = !showImage">Upload</div>
+      </div>
+    </div>
+  </div>
+</div>

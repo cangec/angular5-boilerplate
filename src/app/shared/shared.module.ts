@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ModalModule } from 'ngx-bootstrap';
 import { AddMaterialComponent } from './modals/add-material/add-material.component';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    RouterModule
   ],
   declarations: [SidebarComponent, AddMaterialComponent],
   exports: [SidebarComponent, AddMaterialComponent],
